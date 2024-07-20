@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 02-id-selector - jQuery </title>
+    <title> 02-id-selector - jQuery - Código Mentor </title>
     <script src="js/jquery-3.7.1.min.js"> </script>
 </head>
 
@@ -19,14 +19,17 @@
 
     <br> <br>
 
-    <input  type="text" id="espacio">
-    <input  type="submit" id="enviar" value="enviar">
+    <input type="text" id="espacio">
+    <input type="submit" id="enviar" value="enviar">
 
 
+    <!--  **********  Código de jQuery  **********  -->
     <script>
 
         $(document).ready(function () {
 
+            console.warn('Documento Cargado!!!  ----- ', 'jQuery version:', $.fn.jquery);
+            
             //  Desaparece el texto 2.
             $("#button1").click(function () {
                 $("#texto2").hide();
@@ -38,9 +41,9 @@
             });
 
             //  aparece en un alert el valor del texto introducido en el input.
-            $("#enviar").click(function(){
+            $("#enviar").click(function () {
 
-                var x = $("#espacio").val();
+                const x = $("#espacio").val();
                 alert(x);
             });
 

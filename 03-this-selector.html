@@ -4,27 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 03-this-selector - jQuery </title>
+    <title> 03-this-selector - jQuery - Código Mentor </title>
     <script src="js/jquery-3.7.1.min.js"> </script>
 </head>
 
 <body>
 
-    <input  type="button" id="boton" value="clic">
-    
+    <input type="button" id="boton1" value="clic 1">
+    <input type="button" id="boton2" value="clic 2">
+
     <p id="texto"> Texto </p>
 
 
+    <!--  **********  Código de jQuery  **********  -->
     <script>
 
         $(document).ready(function () {
 
+            console.warn('Documento Cargado!!!  ----- ', 'jQuery version:', $.fn.jquery);
+
             //  Desaparece el texto.
-            $("#boton").click(function () {
-                $("#texto").hide(5000).show(500);
-                $("#boton").hide(3000).show(500);
-                $(this).hide(3000).show(500);
+            $("#boton1").click(function () {
                 
+                $("#texto").hide(5000).show(500);
+                $("#boton1").hide(3000).show(500);
+            });
+
+
+            //  Desaparece el texto - Utilizamos 'this'.
+            $("#boton2").click(function () {
+                
+                $("#texto").hide(5000).show(500);
+                $(this).hide(3000).show(500);
+
             });
 
         });

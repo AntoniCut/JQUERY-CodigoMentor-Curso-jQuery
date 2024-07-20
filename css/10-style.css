@@ -1,0 +1,23 @@
+/*  *****************************************  */
+/*  **********  /css/10-style.css  **********  */
+/*  *****************************************  */
+
+.nuevaClase {
+    color: green;
+    font-size: 25px;
+}
+
+.miclase1 {
+    color: red;
+    font-size: 50px;
+}
+
+.miclase2 {
+    color: orange;
+    font-size: 50px;
+}
+
+.miclase3 {
+    color: blue;
+    font-size: 50px;
+}

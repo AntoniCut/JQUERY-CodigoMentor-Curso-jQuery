@@ -1,0 +1,17 @@
+/*  *****************************************  */
+/*  **********  /css/11-style.css  **********  */
+/*  *****************************************  */
+
+.nuevaClase {
+    color: blue;
+    font-size: 25px;
+}
+
+.miClase {
+    background-color: green;
+    text-align: center;
+    padding-top: 10px;
+    width: 100px;
+    height: 60px;
+    font-size: 25px;
+}

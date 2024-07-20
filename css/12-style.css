@@ -1,0 +1,17 @@
+/*  *****************************************  */
+/*  **********  /css/11-style.css  **********  */
+/*  *****************************************  */
+
+
+#p1 {
+    background-color: green;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.miClase {
+    background-color: orange;
+    font-size: 25px;
+    padding: 5px;
+}
+

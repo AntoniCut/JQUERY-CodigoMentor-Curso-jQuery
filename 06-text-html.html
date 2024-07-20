@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 06-text-html - jQuery - Código Mentor </title>
+    <script src="js/jquery-3.7.1.min.js"> </script>
+</head>
+
+<body>
+
+    <p id="texto1"> Programación </p>
+    <p id="texto2"> Código </p>
+    <button id="boton1"> Cambiar text</button>
+    <button id="boton2"> Cambiar html</button>
+
+
+    <!--  **********  Código de jQuery  **********  -->
+    <script>
+
+        $(document).ready(function () {
+
+            //  -----  Documento Cargado  -----
+            console.warn('Documento Cargado!!!  ----- ', 'jQuery version:', $.fn.jquery);
+
+            $("#boton1").click(function() {
+                $("#texto1").text("<b> Hola Mundo </b>");
+            });
+
+            $("#boton2").click(function() {
+                $("#texto2").html("<b> Tutoriales </b>");
+            });
+            
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 05-even-odd-selectores - jQuery - Código Mentor </title>
+    <script src="js/jquery-3.7.1.min.js"> </script>
+</head>
+
+<body>
+
+    <table border="1">
+
+        <tr>
+            <td> Mario </td>
+            <td> 20 </td>
+        </tr>
+
+        <tr>
+            <td> Beto </td>
+            <td> 18 </td>
+        </tr>
+
+        <tr>
+            <td> Luis </td>
+            <td> 15 </td>
+        </tr>
+
+        <tr>
+            <td> Miguel </td>
+            <td> 27 </td>
+        </tr>
+
+    </table>
+
+
+    <!--  **********  Código de jQuery  **********  -->
+    <script>
+
+        $(document).ready(function () {
+
+            //  -----  Documento Cargado  -----
+            console.warn('Documento Cargado!!!  ----- ', 'jQuery version:', $.fn.jquery);
+
+            //  filas de indice impar.
+            $("tr:even").css("background-color", "yellow");
+
+            //  filas de indice par.
+            $("tr:odd").css("background-color", "green");
+
+        });
+
+    </script>
+
+</body>
+
+</html>
