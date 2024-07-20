@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 02-id-selector - jQuery </title>
+    <script src="js/jquery-3.7.1.min.js"> </script>
+</head>
+
+<body>
+
+    <button id="button1"> borrar texto 2 </button>
+    <button id="button2"> borrar todo </button>
+
+    <div id="texto1"> Texto 1 </div>
+    <div id="texto2"> Texto 2 </div>
+    <div id="texto3"> Texto 3 </div>
+
+    <br> <br>
+
+    <input  type="text" id="espacio">
+    <input  type="submit" id="enviar" value="enviar">
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            //  Desaparece el texto 2.
+            $("#button1").click(function () {
+                $("#texto2").hide();
+            });
+
+            //  Desaparecen todos los elementos.
+            $("#button2").click(function () {
+                $("*").hide();
+            });
+
+            //  aparece en un alert el valor del texto introducido en el input.
+            $("#enviar").click(function(){
+
+                var x = $("#espacio").val();
+                alert(x);
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

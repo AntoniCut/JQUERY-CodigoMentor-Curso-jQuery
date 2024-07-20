@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 03-this-selector - jQuery </title>
+    <script src="js/jquery-3.7.1.min.js"> </script>
+</head>
+
+<body>
+
+    <input  type="button" id="boton" value="clic">
+    
+    <p id="texto"> Texto </p>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            //  Desaparece el texto.
+            $("#boton").click(function () {
+                $("#texto").hide(5000).show(500);
+                $("#boton").hide(3000).show(500);
+                $(this).hide(3000).show(500);
+                
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

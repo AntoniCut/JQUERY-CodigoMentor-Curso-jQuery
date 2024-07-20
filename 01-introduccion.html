@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 01-introduccion - jQuery </title>
+    <script src="js/jquery-3.7.1.min.js"> </script>
+</head>
+
+<body>
+
+    <div id="codigo"> Código Mentor </div>
+
+    <script> 
+    
+        /*
+        //  **********  1ª Forma  **********
+        $(document).on("ready", function () {
+        
+        
+        });
+        */
+
+        //  **********  2ª Forma  **********
+        $(document).ready(function () {
+            
+            console.warn('Documento Cargado!!!  ----- ', 'jQuery version:', $.fn.jquery);
+            
+            $("#codigo").hide(3000).show(1000);   //  Oculta y muestra el contenido del div.
+
+        });
+        
+        /*
+        //  **********  3ª forma  **********
+        $(function(){
+
+
+        });
+        */
+
+        /*
+        //  **********  4ª forma  **********
+        ( function(){
+
+
+        })();
+        */
+
+        
+    </script>
+
+</body>
+
+</html>
