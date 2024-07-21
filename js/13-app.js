@@ -1,5 +1,5 @@
 //  *************************************
-//  **********  /js/12-app.js  **********
+//  **********  /js/13-app.js  **********
 //  *************************************
 
 $(document).ready(function () {
@@ -7,14 +7,18 @@ $(document).ready(function () {
     //  -----  Documento Cargado  -----
     console.warn('Documento Cargado!!!  ----- ', 'jQuery Versión:', $.fn.jquery);
 
-    $("#boton1").click(function () { 
-        $("p").removeAttr("id");
+    $("#p1").dblclick(function () {
+        $(this).hide();
+    });
+       
+    
+    $("#p2").dblclick(function () {
+        alert('Caja Amarilla');
     });
 
-    $("#boton2").click(function () { 
-        $("p").removeAttr("class");
+    $("#p3").dblclick(function () {
+        $(this).hide();
     });
-
     
 
 });

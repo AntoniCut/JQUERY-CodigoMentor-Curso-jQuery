@@ -1,5 +1,5 @@
 //  *************************************
-//  **********  /js/12-app.js  **********
+//  **********  /js/14-app.js  **********
 //  *************************************
 
 $(document).ready(function () {
@@ -7,14 +7,12 @@ $(document).ready(function () {
     //  -----  Documento Cargado  -----
     console.warn('Documento Cargado!!!  ----- ', 'jQuery Versión:', $.fn.jquery);
 
-    $("#boton1").click(function () { 
-        $("p").removeAttr("id");
+    $("input[type='text']").keydown(function () { 
+        $(this).css("background-color", "yellow");
     });
-
-    $("#boton2").click(function () { 
-        $("p").removeAttr("class");
-    });
-
     
+    $("input[type='email']").keydown(function () { 
+        $(this).css("background-color", "green");
+    });
 
 });

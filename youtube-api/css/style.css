@@ -1,0 +1,20 @@
+/*  **************************************************  */
+/*  **********  /youtube-api/css/style.css  **********  */
+/*  **************************************************  */
+
+
+.logo-container {
+    padding: 25px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.logo {
+    height: 50px;
+    padding: 8px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    color: white;
+    background-color: #e3051b;
+
+}
